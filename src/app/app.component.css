@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+mat-sidenav {
+  width: 320px;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+agm-map {
+  height: 600px;
+}
+
+p {
+  padding: 0px 5px 0px 5px;
+}
+
+mat-form-field {
+  padding: 5px 20px;
+}
+
+mat-divider {
+  margin-top: 20px;
+}

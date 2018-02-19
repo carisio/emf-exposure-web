@@ -1,0 +1,13 @@
+<h3 mat-dialog-title>{{data.dict['base_station']}}</h3>
+<mat-dialog-content>
+<div fxLayout="column">
+  <p><b>{{data.dict['latitude']}}: </b>{{data.bs.pos.latitude.toFixed(10)}}&deg;</p>
+  <p><b>{{data.dict['longitude']}}: </b>{{data.bs.pos.longitude.toFixed(10)}}&deg;</p>
+  <p><b>{{data.dict['height']}}: </b>{{formatArray(data.bs.height, 2) + ' m'}}</p>
+  <p><b>{{data.dict['frequency']}}: </b>{{formatArray(data.bs.frequency, 2) + ' MHz'}}</p>
+  <p><b>{{data.dict['tilt']}}: </b>{{formatArray(data.bs.tilt_degree, 2)}}&deg;</p>
+  <p><b>{{data.dict['vertical_bw']}}: </b>{{formatArray(data.bs.theta_bw_vertical_degree, 2)}}&deg;</p>
+  <p><b>{{data.dict['eirp']}}: </b>{{formatArray(data.bs.eirp_max_dbm, 2) + ' dBm'}}</p>
+  <p><b>{{data.dict['sidelobe_envelope']}}: </b>{{formatArray(data.bs.envelope_db, 0) + ' dB'}}</p>
+</div>
+</mat-dialog-content>
